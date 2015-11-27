@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Unit-Test Layer", "Unit-Test Layer", "{A0B849D0-29F8-4A73-887C-45EA89017921}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database Layer", "Database Layer", "{BA1964DE-F75A-49FC-BA8B-F4DD6E80DD9E}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "txstudio.Module.Application.SqlServer", "txstudio.Module.Application.SqlServer\txstudio.Module.Application.SqlServer.sqlproj", "{A33553AC-EFC0-4BF2-8517-659BEDFA8FED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A33553AC-EFC0-4BF2-8517-659BEDFA8FED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A33553AC-EFC0-4BF2-8517-659BEDFA8FED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A33553AC-EFC0-4BF2-8517-659BEDFA8FED}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{A33553AC-EFC0-4BF2-8517-659BEDFA8FED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A33553AC-EFC0-4BF2-8517-659BEDFA8FED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A33553AC-EFC0-4BF2-8517-659BEDFA8FED}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A33553AC-EFC0-4BF2-8517-659BEDFA8FED} = {BA1964DE-F75A-49FC-BA8B-F4DD6E80DD9E}
+	EndGlobalSection
+EndGlobal
