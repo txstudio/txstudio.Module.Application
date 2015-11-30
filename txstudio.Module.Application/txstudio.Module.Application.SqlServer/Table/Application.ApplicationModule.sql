@@ -9,6 +9,8 @@
 	[IsEnabled]			BIT,
 	[IsAnonymous]		BIT, 
 	[IsDeveloping]		BIT,
+
+	[Sort]				SMALLINT,
 	
 	[rowguid]			UNIQUEIDENTIFIER DEFAULT (NEWID()),
 	
@@ -94,6 +96,15 @@ EXEC sp_addextendedproperty @name = N'MS_Description',
     @level1name = N'ApplicationModule',
     @level2type = N'COLUMN',
     @level2name = N'No'
+GO
+EXEC sp_addextendedproperty @name = N'MS_Description',
+    @value = N'排序',
+    @level0type = N'SCHEMA',
+    @level0name = N'Application',
+    @level1type = N'TABLE',
+    @level1name = N'ApplicationModule',
+    @level2type = N'COLUMN',
+    @level2name = N'Sort'
 GO
 EXEC sp_addextendedproperty @name = N'MS_Description',
     @value = N'資料列識別碼',

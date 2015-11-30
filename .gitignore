@@ -11,6 +11,7 @@ packages/
 DEBUG/
 bin/
 obj/
+*.dbmdl
 
 # Windows Installer files
 *.cab
@@ -49,3 +50,4 @@ obj/
 Network Trash Folder
 Temporary Items
 .apdisk
+*.suo
