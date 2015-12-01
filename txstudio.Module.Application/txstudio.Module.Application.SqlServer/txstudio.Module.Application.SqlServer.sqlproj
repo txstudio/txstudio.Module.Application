@@ -89,6 +89,10 @@
     <Build Include="Table\Application.ApplicationUserPassword.sql" />
     <Build Include="Table\Application.ApplicationUserProfile.sql" />
     <Build Include="Type\Application.ApplicationModuleLink.sql" />
+    <Build Include="StoredProcedure\Application.AddApplicationSubscriber.sql" />
+    <Build Include="StoredProcedure\Application.UpdateApplicationSubscriber.sql" />
+    <Build Include="StoredProcedure\Application.UpdateApplicationSubscriberInModule.sql" />
+    <Build Include="Type\Application.ApplicationModule.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Publish\localdb.publish.xml" />
