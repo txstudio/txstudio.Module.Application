@@ -11,6 +11,8 @@ CREATE PROCEDURE [Application].[UpdateApplicationSubscriber]
 	@Result				BIT OUT
 AS
 
+	SET @Result = 0
+
 	UPDATE [Application].[ApplicationSubscriber]
 	   SET [Name] = @Name
 		  ,[Description] = @Description
@@ -18,6 +20,8 @@ AS
 		  ,[whenLastChange] = SYSDATETIMEOFFSET()
 		  ,[memberLastChange] = @memberLastChange
 	 WHERE [No] = @No
+
+	 SET @Result = 1
 
 GO
 
