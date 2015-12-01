@@ -1,10 +1,14 @@
-﻿CREATE PROCEDURE [Application].[UpdateApplicationModule]
+﻿/*
+	更新指定的應用程式模組內容
+*/
+CREATE PROCEDURE [Application].[UpdateApplicationModule]
 	@Name				NVARCHAR(50),
 	@Description		NVARCHAR(250),
 	
 	@IsEnabled			BIT,
 	@IsAnonymous		BIT,
 	@IsDeveloping		BIT,
+	@Sort				SMALLINT,
 	@ModuleLink			[Application].[ApplicationModuleLink] READONLY,
 	
 	@memberLastChange	NVARCHAR(50),
@@ -18,6 +22,7 @@ AS
 			,[IsEnabled] = @IsEnabled
 			,[IsAnonymous] = @IsAnonymous
 			,[IsDeveloping] = @IsDeveloping
+			,[Sort] = @Sort
 			,[whenLastChange] = SYSDATETIMEOFFSET()
 			,[memberLastChange] = @memberLastChange
 		WHERE [No] = @No
