@@ -1,4 +1,7 @@
-﻿CREATE PROCEDURE [Application].[AddApplicationModule]
+﻿/*
+	新增指定應用程式模組內容，並回傳新增的模組識別碼
+*/
+CREATE PROCEDURE [Application].[AddApplicationModule]
 	@Schema			VARCHAR(25),
 	@Name			NVARCHAR(50),
 	@Description	NVARCHAR(250),
@@ -6,6 +9,7 @@
 	@IsEnabled		BIT,
 	@IsAnonymous	BIT,
 	@IsDeveloping	BIT,
+	@Sort			SMALLINT,
 	@ModuleLink		[Application].[ApplicationModuleLink] READONLY,
 	
 	@memberCreate	NVARCHAR(50),
@@ -19,6 +23,7 @@ AS
 	   ,[IsEnabled]
 	   ,[IsAnonymous]
 	   ,[IsDeveloping]
+	   ,[Sort]
 	   ,[memberCreate]
 	) VALUES (
 		@Schema
@@ -27,6 +32,7 @@ AS
 	   ,@IsEnabled
 	   ,@IsAnonymous
 	   ,@IsDeveloping
+	   ,@Sort
 	   ,@memberCreate
 	)
 	
