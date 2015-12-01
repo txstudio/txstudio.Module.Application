@@ -16,6 +16,8 @@ CREATE PROCEDURE [Application].[UpdateApplicationModule]
 	@Result				BIT OUT
 AS
 
+	SET @Result = 0
+
 	UPDATE [Application].[ApplicationModule]
 		SET [Name] = @Name
 			,[Description] = @Description
@@ -52,4 +54,5 @@ AS
 			,source.[Link]
 		);
 
+	SET @Result = 1
 GO
